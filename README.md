@@ -1,6 +1,6 @@
 # Template for Mapping from MySQL to RDF Triples using XRM
 
-<a href="https://gitpod.io/from-referrer/" style="padding: 10px;">
+<a href="https://gitpod.io/#https://github.com/zazuko/gitpod-example" style="padding: 10px;">
     <img src="https://gitpod.io/button/open-in-gitpod.svg" width="150" alt="Push" align="center">
 </a>
 
