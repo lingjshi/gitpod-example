@@ -12,7 +12,6 @@ tasks:
     init: |
       mysql < example-database.sql
     command: |
-      gp sync-done mysql-data-load
       mysql -e 'SHOW TABLES FROM exampledatabase'
   - name: convert
     init: make install_ontop
