@@ -18,11 +18,4 @@ tasks:
     init: make install_ontop
     command: |
       gp sync-await mysql-data-load
-      make convert
-      gp sync-done convert
-  - name: pipeline
-    before: cd pipeline
-    init: npm ci
-    command: |
-      gp sync-await convert
-      npm run pipeline-file
+      echo 'start convert'
