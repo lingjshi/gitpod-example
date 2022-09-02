@@ -12,9 +12,10 @@ tasks:
     init: |
       mysql < example-database.sql
     command: |
+      gp sync-done mysql-data-load
       mysql -e 'SHOW TABLES FROM exampledatabase'
-  - name: convert
-    init: make install_ontop
+  - name: mysql-notification
+    init: echo 'wait mysql ...'
     command: |
       gp sync-await mysql-data-load
-      echo 'start convert'
+      echo 'mysql load completed'
